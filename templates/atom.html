@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Оборудование для сбора, хранения, переработки жидких и твердых радиоактивных отходов
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+{% endblock link %}
+
+{% block content %}
+<div class="wrapper" style="width: 50%; margin-left: 20%; margin-bottom: 2%; height: 400px;">
+  <div class="product-info">
+    <div class="product-text">
+      <h1 style="color: rgb(88, 88, 88);">Оборудование для сбора, хранения, переработки жидких и <br> твердых
+        радиоактивных отходов</h1>
+      <h2 style="color: rgb(61, 61, 61);">ООО "Полесье"</h2>
+      <p style="width: 1300px; color: rgb(88, 88, 88);">В процессе хранения РАО должна обеспечиваться их изоляция и
+        облегчение дальнейших процедур,<br>
+        которые будут проводиться в процессе последующих этапов захоронения/переработки.<br>
+        <br>К радиоактивным отходам относятся не подлежащие дальнейшему использованию растворы, изделия, <br>
+        материалы, оборудование, аппаратура, грунт, содержащие радионуклиды в количествах, превышающих безопасные
+        значения, которые установлены <br>
+        действующими нормами и правилами, утвержденными органами здравоохранения.<br>
+
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="cards">
+  <article class="card card--34">
+
+    <div class="card__img1" style="height: 550px ;"></div>
+    <a href="/temp" class="card_link">
+      <div class="card__img1--hover" style="height: 600px ;"></div>
+    </a>
+    <div class="card__info">
+      <span class="card__category">РАО</span>
+      <h3 class="card__title">Контейнер сборник для твердых радиоактивных отходов<br>
+        (3 класс безопасности)</h3>
+    </div>
+  </article>
+
+  <article class="card card--35">
+
+    <div class="card__img1" style="height: 550px ;"></div>
+    <a href="/temp" class="card_link">
+      <div class="card__img1--hover" style="height: 600px ;"></div>
+    </a>
+    <div class="card__info">
+      <span class="card__category">РАО</span>
+      <h3 class="card__title"> Бочки для отвержденных ЖРО I группы активности
+        <br>(2 класс безопасности)
+      </h3>
+
+    </div>
+  </article>
+</section>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Измерительные камеры
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+{% endblock link %}
+
+{% block content %}
+<div class="wrapper" style="width: 50%; margin-left: 18%; height: 150px;">
+  <div class="product-info" style="height: 120px;">
+    <div class="product-text" >
+      <h1 style="color: rgb(88, 88, 88);">Измерительные камеры</h1>
+      <h2 style="color: rgb(61, 61, 61);">ООО "Полесье"</h2>
+    </div>
+  </div>
+</div>
+
+<section class="cards" >
+  <article class="card card--27"  >
+
+    <div class="card__img1"></div>
+    <a href="/temp" class="card_link">
+       <div class="card__img1--hover" ></div>
+     </a>
+    <div class="card__info">
+      <span class="card__category">Камеры измерительные</span>
+      <h3 class="card__title">Измерительная камера<br>
+        (3 класс безопасности)</h3>
+    </div>
+  </article>
+</section>
+{% endblock content %}

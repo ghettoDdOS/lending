@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Каталог оборудования
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+{% endblock link %}
+
+{% block content %}
+<div class="wrapper" style="width: 50%; margin-left: 18%; margin-bottom: 2%; height: 400px; ">
+  <div class="product-info" >
+    <div class="product-text" >
+      <h1 style="color: rgb(133, 129, 129);">Политика в области качества,<br> ООО «Полесье» – предприятие, ориентированное на потребителя.</h1>
+      <h2 style="color: rgb(112, 111, 111);">ООО "Полесье"</h2>
+      <p style="width: 1300px;">Мы внимательно и бережно относимся к интересам потребителей, стремимся предвосхищать их ожидания, строим долговременные партнерские отношения,
+         <br> основанные на взаимном доверии и поиске оптимальных решений, способствующих успеху заказчика. <br>
+         <br>С нашими производственными возможностями можно ознакомится ниже в каталоге оборудования.<br> </p>
+    </div>
+  </div>
+</div>
+
+
+<h1 style="color: rgb(133, 129, 129); margin-left: 40%; margin-top: 2%; margin-bottom: 1%; font-family: 'Playfair Display', serif;">Каталог оборудования </h1>
+
+
+<section class="cards">
+  <article class="card card--1" >
+
+    <div class="card__img"><img src="{% static 'images/bora.jpg' %}"/> </div>
+    <a href="/temp" class="card_link">
+       <div class="card__img--hover"></div>
+     </a>
+    <div class="card__info">
+      <span class="card__category">Теплообменники</span>
+      <h3 class="card__title">Теплообменное оборудование</h3>
+
+    </div>
+  </article>
+
+
+  <article class="card card--2">
+    <div class="card__img"></div>
+    <a href="/sos" class="card_link">
+       <div class="card__img--hover"></div>
+     </a>
+    <div class="card__info">
+      <span class="card__category">Емкости</span>
+      <h3 class="card__title">Сосуды, емкостное оборудование и баки</h3>
+    </div>
+  </article>
+
+  <article class="card card--3">
+      <div class="card__img"></div>
+      <a href="/cam" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Камеры</span>
+        <h3 class="card__title">Камеры измерительные</h3>
+      </div>
+    </article>
+
+    <article class="card card--4">
+      <div class="card__img"></div>
+      <a href="/filtr" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Фильтры</span>
+        <h3 class="card__title">Фильтры для очистки рабочих сред</h3>
+      </div>
+    </article>
+
+    <article class="card card--5">
+      <div class="card__img"></div>
+      <a href="/bez" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Безопасность</span>
+        <h3 class="card__title">Оборудование защитных и локализующих систем безопасности</h3>
+      </div>
+    </article>
+
+    <article class="card card--6">
+      <div class="card__img"></div>
+      <a href="/tran" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Транспортировка</span>
+        <h3 class="card__title">Транспортно-технологическое оборудование</h3>
+      </div>
+    </article>
+    </section>
+
+
+    <section class="cards2">
+    <article class="card card--7">
+      <div class="card__img"></div>
+      <a href="/atom" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Отходы</span>
+        <h3 class="card__title">Оборудование для сбора, хранения, переработки жидких и твердых радиоактивных отходов</h3>
+      </div>
+    </article>
+
+    <article class="card card--8">
+      <div class="card__img"></div>
+      <a href="/sos" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Блоки</span>
+        <h3 class="card__title">Блоки установки концентрирования</h3>
+      </div>
+    </article>
+  </section>
+{% endblock content %}

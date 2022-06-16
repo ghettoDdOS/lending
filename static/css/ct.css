@@ -1,0 +1,324 @@
+
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 90%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.cards2 {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 40%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+
+.cards3 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 70%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 18%;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('https://gns50.ru/upload/iblock/cc0/cc0b1f2977bd71e1bbf6f67ca7de73b5.jpg');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://isteels.ru/media/uploads/images/load/Emk-drenazh-gorizont.png');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('https://cdn.freelance.ru/img/portfolio/pics/00/23/FF/2359266.jpg?mt=ac6665e3');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+    background-image: url('https://cdn.vseinstrumenti.ru/images/goods/santehnika/vse-dlya-vodosnabzheniya/847758/560x504/51565447.jpg');
+}
+
+.card--5 .card__img, .card--5 .card__img--hover {
+    background-image: url('https://avatars.mds.yandex.net/i?id=1a6a5b913dab27f5ce04463a8369dfdc-4824873-images-thumbs&n=13&exp=1');
+}
+
+.card--6 .card__img, .card--6 .card__img--hover {
+    background-image: url('https://plastikgrad.ru/wp-content/uploads/2021/08/13.jpg');
+}
+
+.card--7 .card__img, .card--7 .card__img--hover {
+    background-image: url('https://www.sokoleso.ru/content/images/avtotovari/goods/image_53233_big.jpg');
+}
+
+.card--8 .card__img, .card--8 .card__img--hover {
+    background-image: url('https://siblinensk.ru/upload/iblock/daa/daa08caf758f5eb64779094195ee728b.jpg');
+}
+
+.card--9 .card__img1, .card--9 .card__img1--hover {
+    background-image: url(img/ПА626_Регенеративный\ теплообменник_1.jpg);
+}
+
+.card--10 .card__img1, .card--10 .card__img1--hover {
+    background-image: url(img/ПА609.00.00.000\ Теплообменник\ Е3001\ для\ Ставролена!!!!!.jpg);
+}
+
+.card--11 .card__img1, .card--11 .card__img1--hover {
+    background-image: url(img/ПА637_Теплообм.\ доохл.продувки\ и\ охл.дренажей\ пароген-в_1.jpg);
+}
+
+.card--12 .card__img1, .card--12 .card__img1--hover {
+    background-image: url(img/1391-04-0005_Холодильник\ АК\ РоАЭС\,\ ЛАЭС\ -2.JPG.JPG);
+}
+
+.card--13 .card__img1, .card--13 .card__img1--hover {
+    background-image: url(img/ПА648_Охладитель\ конденсата\ греющего\ пара\ СВО\ ТАЭС\ -1.JPG);
+}
+
+.card--14 .card__img1, .card--14 .card__img1--hover {
+    background-image: url(img/Теплообменник\ отбора\ проб\ -1.jpg);
+}
+
+.card--15 .card__img1, .card--15 .card__img1--hover {
+    background-image: url(img/ПА584_Оборудоваие\ СПОТ\ ЗО\ -1.JPG);
+}
+
+.card--16 .card__img1, .card--16 .card__img1--hover {
+    background-image: url(img/ПА585_Теплообменник\ СПОТ\ ПГ\ 2.JPG);
+}
+
+.card--17 .card__img1, .card--17 .card__img1--hover {
+    background-image: url(img/1_Система\ трубная\(2\).jpg);
+}
+
+.card--18 .card__img1, .card--18 .card__img1--hover {
+    background-image: url(img/ПА463_Деаэратор\ \(РоАЭС\).jpg);
+}
+
+.card--19 .card__img1, .card--19 .card__img1--hover {
+    background-image: url(img/Бак\ 50м3.JPG);
+}
+
+.card--20 .card__img1, .card--20 .card__img1--hover {
+    background-image: url(img/ПА737\ Барботер.JPG);
+}
+
+.card--21 .card__img1, .card--21 .card__img1--hover {
+    background-image: url(img/Бак\ 100м3\ -\ 1.JPG);
+}
+
+.card--22 .card__img1, .card--22 .card__img1--hover {
+    background-image: url(img/ПА667_Бак\ сбора\ концентрата\ НВАЭС-2\ -2.JPG);
+}
+
+.card--23 .card__img1, .card--23 .card__img1--hover {
+    background-image: url(img/ПА510_Ванна\ унифицированная.jpg);
+}
+
+.card--24 .card__img1, .card--24 .card__img1--hover {
+    background-image: url(img/ПА379_Бак\ сбора\ протечек\ боросодержащих\ вод\ 1.jpg);
+}
+
+.card--25 .card__img1, .card--25 .card__img1--hover {
+    background-image: url(img/ПА529\ Расходный\ бак\ дизельного\ топлива\ V=5м3\ -\ IMG_0016.jpg);
+}
+
+.card--26 .card__img1, .card--26 .card__img1--hover {
+    background-image: url(img/РПША27.04_Модуль\ подогрева\ охл.жидк.\ низкотемп.jpg);
+}
+
+.card--27 .card__img1, .card--27 .card__img1--hover {
+    background-image: url(img/34.png);
+}
+
+.card--28 .card__img1, .card--28 .card__img1--hover {
+    background-image: url(img/ПА565_Фильтр-регенератор\ АФР-2\,6-0\,6_2.jpg);
+}
+
+.card--29 .card__img1, .card--29 .card__img1--hover {
+    background-image: url(img/ПА465_Фильтр\ ионитный.jpg);
+}
+
+.card--30 .card__img1, .card--30 .card__img1--hover {
+    background-image: url(img/ПА456_Фильтр\ ионообменный\ БалтАЭС\ -2.JPG);
+}
+
+.card--31 .card__img1, .card--31 .card__img1--hover {
+    background-image: url(img/ПА281_Фильтр\ гравийный\ РоАЭС_1.jpg);
+}
+
+.card--32 .card__img1, .card--32 .card__img1--hover {
+    background-image: url(img/АКЦШ456_Тамбур-шлюзы\ 3.jpg);
+}
+
+.card--33 .card__img1, .card--33 .card__img1--hover {
+    background-image: url(img/ПА125\,\ 128_Затвор\ воздушный-1.jpg);
+}
+
+.card--34 .card__img1, .card--34 .card__img1--hover {
+    background-image: url(img/ПА660_Контейнер-сборник\ для\ ТРО_ЛАЭС\ -2.JPG);
+}
+
+.card--35 .card__img1, .card--35 .card__img1--hover {
+    background-image: url(img/ПА500_Бочка\ для\ отвержденных\ ЖРО\ I\ группы\ активности\ 1.jpg);
+}
+
+.card--36 .card__img1, .card--36 .card__img1--hover {
+    background-image: url(img/ПА121_Чехол\ транспортный.jpg);
+}
+
+.card--37 .card__img1, .card--37 .card__img1--hover {
+    background-image: url(img/РНАТ_Контейнер\ ззащитный.jpg);
+}
+
+.card--38 .card__img1, .card--38 .card__img1--hover {
+    background-image: url(img/ПА288\ \(1\)\ Цилиндр\ защитный.jpg);
+}
+
+.card--39 .card__img1, .card--39 .card__img1--hover {
+    background-image: url(img/Пеналы\ 1.jpg);
+}
+
+.card--40 .card__img1, .card--40 .card__img1--hover {
+    background-image: url(img/ЗУМ1-03.01.000_штанга\ телескопическая\,\ \(из\ раб.штанги\ маш.перегр.\)\ Зап.АЭС\ -1.JPG);
+}
+
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__img1 {
+    visibility: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 235px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;}
+
+.card__img1--hover {
+    transition: 0.2s all ease-out;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+    position: absolute;
+      height: 300px;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+  
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__img1--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Контакты
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+{% endblock link %}
+
+{% block header %}
+<header>
+  <nav class="container">
+    <div class="logo">
+      <img src="{% static 'images/лого стр.png' %}" height = 80px   float: left>
+    </div>
+    <div class="nav-toggle"><span></span></div>
+    <ul id="menu">
+      <li><a href="/">Вернуться тукрепрпгварпг</a></li>
+    </ul>
+  </nav>
+</header>
+{% endblock header %}
+
+{% block content %}
+<blockquote class="blockquote-7">
+  <div class="txt2">
+    <h2>Вы можете связаться с нами</h2>
+    </div>
+    <script src="https://yastatic.net/s3/frontend/forms/_/embed.js">
+    </script>
+    <iframe src="https://forms.yandex.ru/u/6277efd7ce6491d4fcfcff7d/?iframe=1" frameborder="0" name="ya-form-6277efd7ce6491d4fcfcff7d" width="650" height="700">
+  </iframe>
+</blockquote>
+{% endblock content %}
+
+{% block footer %}
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                <h3>ООО "Полесье"</h3>
+                  <ul>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Система качества</a></li>
+                      <li><a href="#">Каталог оборудования</a></li>
+                      <li><a href="#">Услуги</a></li>
+                      <li><a href="#">Контакты</a></li>
+                  </ul>
+              </div>
+
+          <p class="copyright">ООО "Полесье" © 2021</p>
+      </div>
+  </footer>
+</div>
+{% endblock footer %}

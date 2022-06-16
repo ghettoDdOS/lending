@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Транспортно-технологическое оборудование
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+{% endblock link %}
+
+{% block content %}
+<div class="wrapper" style="width: 50%; margin-left: 28%; margin-bottom: 1%; height: 100px;">
+  <div class="product-info" style="height:300px ;" >
+    <div class="product-text" >
+      <h1 style="color: rgb(88, 88, 88);">Транспортно-технологическое оборудование</h1>
+      <h2 style="color: rgb(61, 61, 61);">ООО "Полесье"</h2>
+      <p style="width: 1300px;height: 200px; color: rgb(88, 88, 88);">Наше предприятие производит транспортно-технологическое оборудование высокого класса, <br>
+        для безопасной и стабильно-бесперебойной работы наших заказчиков.
+           </p>
+    </div>
+  </div>
+</div>
+
+
+<section class="cards" style="height: 400px;">
+  <article class="card card--36" >
+
+    <div class="card__img1"></div>
+    <a href="/temp" class="card_link">
+       <div class="card__img1--hover"></div>
+     </a>
+    <div class="card__info">
+      <span class="card__category">Транспортно-технологическое оборудование</span>
+      <h3 class="card__title">Чехол транспортный
+      <br>(3 класс безопасности)</h3>
+    </div>
+  </article>
+
+  <article class="card card--37" >
+
+      <div class="card__img1"></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Транспортно-технологическое оборудование</span>
+        <h3 class="card__title"> Контейнер защитный
+          <br>(3 класс безопасности)</h3>
+
+      </div>
+    </article>
+
+    <article class="card card--38" >
+
+      <div class="card__img1" ></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover" ></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Транспортно-технологическое оборудование</span>
+        <h3 class="card__title"> Цилиндр защитный<br>
+          (3 класс безопасности)</h3>
+
+      </div>
+    </article>
+    </section>
+
+
+
+    <section class="cards">
+    <article class="card card--39" >
+
+      <div class="card__img1" style="height: 550px;"></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover" style="height: 600px;"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Транспортно-технологическое оборудование</span>
+        <h3 class="card__title"> Пеналы герметичные<br>
+          (3 класс безопасности)</h3>
+
+      </div>
+    </article>
+
+    <article class="card card--40" >
+
+      <div class="card__img1" style="height: 550px;"></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover" style="height: 600px;"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Транспортно-технологическое оборудование</span>
+        <h3 class="card__title"> Штанга телескопическая, входящая в состав
+          рабочей штанги машины перегрузочной <br>
+          (2 класс безопасности)</h3>
+
+      </div>
+    </article>
+</section>
+{% endblock content %}

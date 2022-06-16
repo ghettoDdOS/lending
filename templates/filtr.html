@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Фильтры для очистки рабочих сред
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+{% endblock link %}
+
+{% block content %}
+<div class="wrapper" style="width: 50%; margin-left: 28%; margin-bottom: 2%; height: 400px;">
+  <div class="product-info" >
+    <div class="product-text" >
+      <h1 style="color: rgb(88, 88, 88);">Фильтры для очистки рабочих сред</h1>
+      <h2 style="color: rgb(61, 61, 61);">ООО "Полесье"</h2>
+      <p style="width: 1300px; color: rgb(88, 88, 88);">Водоподготовка играет особую роль на любом производстве и разительно отличается от бытовой.<br>
+          <br>Идеально чистая вода чрезвычайно необходима для каждой отрасли: пищевой, фармацевтической, химической, нефтеперерабатывающей,<br> горнодобывающей,
+          металлургической, машиностроительной и многих других. От ее качества напрямую зависит результат работы.<br>
+           </p>
+    </div>
+  </div>
+</div>
+
+
+<section class="cards">
+  <article class="card card--28" >
+
+    <div class="card__img1"></div>
+    <a href="/temp" class="card_link">
+       <div class="card__img1--hover"></div>
+     </a>
+    <div class="card__info">
+      <span class="card__category">Фильтры</span>
+      <h3 class="card__title">Фильтр-регенератор<br>
+          (3 класс безопасности)</h3>
+    </div>
+  </article>
+
+  <article class="card card--29" >
+
+      <div class="card__img1"></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Фильтры</span>
+        <h3 class="card__title"> Фильтр ионитный
+          <br>(3 класс безопасности)</h3>
+
+      </div>
+    </article>
+
+    <article class="card card--30" >
+
+      <div class="card__img1" ></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover" ></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Фильтры</span>
+        <h3 class="card__title"> Фильтр ионообменный<br>
+          (3 класс безопасности)</h3>
+
+      </div>
+    </article>
+    </section>
+
+
+
+    <section class="cards">
+    <article class="card card--31" >
+
+      <div class="card__img1" style="height: 550px;"></div>
+      <a href="/temp" class="card_link">
+         <div class="card__img1--hover" style="height: 600px;"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category">Фильтры</span>
+        <h3 class="card__title"> Фильтр гравийный<br>
+          (3-4 классы безопасности)</h3>
+
+      </div>
+    </article>
+</section>
+{% endblock content %}
