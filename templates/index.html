@@ -1,51 +1,46 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block content %}
-
-
-<img src="{% static 'images/лого3.PNG' %}" width="100%" height="550" />
-<div class="txt2">
-<h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif">Почему нас выбирают</h2>
-</div>
-<div class="row1-container">
-  <div class="box box-down cyan">
-    <h2>Надежно</h2>
-    <p>Мы внимательно и бережно относимся к интересам потребителей</p>
-    <img src="{% static 'images/надежно.png' %}" alt="">
+  <img class="img-fluid w-100" src="{% static 'images/лого3.PNG' %}" />
+  <div class="txt2">
+    <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif">Почему нас выбирают</h2>
+  </div>
+  <div class="row1-container">
+    <div class="box box-down cyan">
+      <h2>Надежно</h2>
+      <p>Мы внимательно и бережно относимся к интересам потребителей</p>
+      <img src="{% static 'images/надежно.png' %}" alt="">
+    </div>
+    <div class="box red">
+      <h2>Ценим ваше время</h2>
+      <p>Мы знаем как важно время, поэтому все заказы выполняем в срок</p>
+      <img src="{% static 'images/часы2.png' %}" alt="">
+    </div>
+    <div class="box box-down blue">
+      <h2>Качественно</h2>
+      <p>Вся продукция предприятия проходит сертификацию</p>
+      <img src="{% static 'images/качественно.png' %}" alt="">
+    </div>
+  </div>
+  <div class="row2-container">
+    <div class="box orange">
+      <h2>Доставка по всему миру</h2>
+      <p>Благодаря расположению нашего производства мы осуществляем доставку оборудования по всему миру</p>
+      <img src="{% static 'images/доставка.png' %}" alt="">
+    </div>
   </div>
 
-  <div class="box red">
-    <h2>Ценим ваше время</h2>
-    <p>Мы знаем как важно время, поэтому все заказы выполняем в срок</p>
-    <img src="{% static 'images/часы2.png' %}" alt="">
-  </div>
-
-  <div class="box box-down blue">
-    <h2>Качественно</h2>
-    <p>Вся продукция предприятия проходит сертификацию</p>
-    <img src="{% static 'images/качественно.png' %}" alt="">
-  </div>
-</div>
-<div class="row2-container">
-  <div class="box orange">
-    <h2>Доставка по всему миру</h2>
-    <p>Благодаря расположению нашего производства мы осуществляем доставку оборудования по всему миру</p>
-    <img src="{% static 'images/доставка.png' %}" alt="">
-  </div>
-</div>
-
-<div style="height: 900px; background-color: #08286d;">
-  <div class="product-img w-100">
-    <img class="img-fluid" src="{% static 'images/svarshik.jpg' %}" height="500" alt="">
-  </div>
-  <div class="product-info" style="width: 100%; height: 500px; background-color: #08286d;">
-    <div class="product-text" style="width: 50%; height: 400; margin-left: 20%;">
+  <div style="background-color: #08286d;">
+    <img class="img-fluid" src="{% static 'images/svarshik.jpg' %}" alt="">
+  <div class="product-info" style="width: 100%; background-color: #08286d;">
+    <div class="product-text text-center px-5">
       <h1 style="color: white;">Наши корпоративные ценности составляют основу всего, что мы делаем</h1>
       <h2>ООО "Полесье"</h2>
       <p style="height: 250px; color: rgb(255, 255, 255);">За время своего существования ООО "Полесье" успешно сконструировало, изготовило и поставило оборудование для таких объектов как: Балаковская АЭС (Россия), Балтийская АЭС (Россиия), Белоярская АЭС (Россия), Волгодонская АЭС (Россия),  Калининская АЭС (Россия), Кольская АЭС (Россия), Курская АЭС (Россия), Ленинградская АЭС (Россия), Нововоронежская АЭС (Россия), Ростовская АЭС (Россия), Смоленская АЭС (Россия), Армянская АЭС (Армения), АЭС "Куданкулам" (Индия), АЭС "Тяньвань" (Китай) и др.<br>
        <br>Стабильность финансового состояния, рентабельность производства, отсутствие кредитной задолженности и задолженности перед бюджетом, высокое качество выполняемых работ позволяют нашему предприятию поддерживать производственные и коммерческие связи со многими предприятиями и организациями России и некоторых зарубежных стран.
-       <div class="button-wrap" style="margin-top: 0%;">
-        <a class="atuin-btn" style="margin-left: 5%;" href="/company">Подробнее</a>
+       <div class="button-wrap p-3">
+        <a class="atuin-btn" href="/company">Подробнее</a>
         </div>
       </p>
 
@@ -53,21 +48,22 @@
   </div>
 </div>
 
-        <blockquote class="blockquote-7">
-          <p> ООО «Полесье» располагает аккредитованной испытательной лабораторией</p>
-          <ul>
-            <li> Металлографические исследования</li>
-            <li> Физико-механические испытания</li>
-            <li> Испытания на стойкость к МКК</li>
-            <li> Стилоскопирование</li>
-            <li> Спектральный анализ</li>
-            <li> Ультразвуковой контроль</li>
-            <li> Радиографический контроль</li>
-            <li> Капиллярный контроль</li>
-            <li> Контроль герметичности</li>
-           </ul>
-      </blockquote>
-
+<div>
+  <blockquote class="blockquote-7">
+    <p> ООО «Полесье» располагает аккредитованной испытательной лабораторией</p>
+    <ul>
+      <li> Металлографические исследования</li>
+      <li> Физико-механические испытания</li>
+      <li> Испытания на стойкость к МКК</li>
+      <li> Стилоскопирование</li>
+      <li> Спектральный анализ</li>
+      <li> Ультразвуковой контроль</li>
+      <li> Радиографический контроль</li>
+      <li> Капиллярный контроль</li>
+      <li> Контроль герметичности</li>
+     </ul>
+</blockquote>
+</div>
       <div class="txt2">
       <h2>Новости и события</h2>
       </div>
