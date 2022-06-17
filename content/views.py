@@ -1,8 +1,17 @@
-from django.views.generic import TemplateView
+from django.views.generic import ListView, TemplateView, DetailView
+
+from .models import LicenseCategory
+from .models import News as NewsModel
+from .models import Vacancy
 
 
 class Index(TemplateView):
     template_name = "index.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["news"] = NewsModel.objects.all()
+        return context
 
 
 class Atom(TemplateView):
@@ -21,7 +30,8 @@ class Catalog(TemplateView):
     template_name = "catalog.html"
 
 
-class Company(TemplateView):
+class Company(ListView):
+    model = LicenseCategory
     template_name = "company.html"
 
 
@@ -33,8 +43,14 @@ class Filtr(TemplateView):
     template_name = "filtr.html"
 
 
-class News(TemplateView):
+class News(ListView):
+    model = NewsModel
     template_name = "news.html"
+
+
+class NewsDetail(DetailView):
+    model = NewsModel
+    template_name = "news-detail.html"
 
 
 class Politic(TemplateView):
@@ -53,5 +69,6 @@ class Tran(TemplateView):
     template_name = "tran.html"
 
 
-class Vacansii(TemplateView):
+class Vacansii(ListView):
+    model = Vacancy
     template_name = "vacansii.html"

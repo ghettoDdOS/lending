@@ -45,7 +45,7 @@
       <p style="height: 250px; color: rgb(255, 255, 255);">За время своего существования ООО "Полесье" успешно сконструировало, изготовило и поставило оборудование для таких объектов как: Балаковская АЭС (Россия), Балтийская АЭС (Россиия), Белоярская АЭС (Россия), Волгодонская АЭС (Россия),  Калининская АЭС (Россия), Кольская АЭС (Россия), Курская АЭС (Россия), Ленинградская АЭС (Россия), Нововоронежская АЭС (Россия), Ростовская АЭС (Россия), Смоленская АЭС (Россия), Армянская АЭС (Армения), АЭС "Куданкулам" (Индия), АЭС "Тяньвань" (Китай) и др.<br>
        <br>Стабильность финансового состояния, рентабельность производства, отсутствие кредитной задолженности и задолженности перед бюджетом, высокое качество выполняемых работ позволяют нашему предприятию поддерживать производственные и коммерческие связи со многими предприятиями и организациями России и некоторых зарубежных стран.
        <div class="button-wrap" style="margin-top: 0%;">
-        <a class="atuin-btn" style="margin-left: 5%;" href="company.html">Подробнее</a>
+        <a class="atuin-btn" style="margin-left: 5%;" href="/company">Подробнее</a>
         </div>
       </p>
 
@@ -73,71 +73,23 @@
       </div>
 
       <section class="grid">
+        {% for ns in news %}
         <article class="grid-item">
+            {% if ns.img %}
             <div class="image">
-                <img src="{% static 'images/bora.jpg' %}" />
-            </div>
+              <img src="{{ns.img.url}}" />
+          </div>
+            {% endif %}
             <div class="info">
-                <h2>АЭС «Куданкулам»</h2>
+                <h2>{{ns.title}}</h2>
                 <div class="info-text">
-                    <p>Выполняется нанесение покрытия на Емкость системы быстрого ввода бора</p>
+                    <p>{{ns.text}}</p>
                 </div>
                 <div class="button-wrap">
-                    <a class="atuin-btn" href="news.html">Подробнее</a>
+                    <a class="atuin-btn" href="/news/{{ns.id}}">Подробнее</a>
                 </div>
             </div>
         </article>
-
-        <article class="grid-item">
-            <div class="image">
-                <img src="{% static 'images/шахта.jpg' %}" />
-            </div>
-            <div class="info">
-                <h2>Отгружено перекрытие шахты реактора</h2>
-                <div class="info-text">
-                    <p>Отгружено перекрытие шахты реактора</p>
-                </div>
-                <div class="button-wrap">
-                    <a class="atuin-btn" href="news.html">Подробнее</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="grid-item">
-          <div class="image">
-              <img src="{% static 'images/dsc_0015.jpg' %}" />
-          </div>
-
-          <div class="info">
-              <h2>Обновление парка станочного оборудования</h2>
-              <div class="info-text">
-                  <p> В целях наращивания производственных мощностей и обновления парка станочного оборудования предприятием
-                    ООО «Полесье» закуплено более совершенное, высокоточное, производительное технологическое оборудование,
-                    оснащенное системой ЧПУ.</p>
-              </div>
-
-              <div class="button-wrap">
-                  <a class="atuin-btn" href="news.html">Подробнее</a>
-              </div>
-          </div>
-        </article>
-
-      <article class="grid-item">
-        <div class="image">
-            <img src="{% static 'images/dsc06655_-_1.jpg' %}" />
-        </div>
-
-        <div class="info">
-            <h2>Гидрообразивная резка</h2>
-            <div class="info-text">
-                <p> В ООО «Полесье» успешно внедрено и используется оборудование гидроабразивной резки фирм
-                  Bystronic ByJet (Швейцария) и PTV (Чехия).</p>
-            </div>
-
-            <div class="button-wrap">
-                <a class="atuin-btn" href="news.html">Подробнее</a>
-            </div>
-        </div>
-    </article>
+        {% endfor %}
     </section>
 {% endblock content %}

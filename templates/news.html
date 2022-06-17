@@ -2,73 +2,53 @@
 {% load static %}
 
 {% block title %}
-Новости
+Контакты
 {% endblock title %}
 
 {% block link %}
 <link rel="stylesheet" href="{% static 'css/ct.css' %}">
-<link rel="stylesheet" href="{% static 'css/3.css' %}">
-<link rel="stylesheet" href="{% static 'css/news.css' %}">
 {% endblock link %}
 
-{% block body_style %}
-background-color: rgb(255, 255, 255);
-{% endblock body_style %}
+{% block header %}
+<nav class="navbar navbar-dark">
+  <a class="navbar-brand" href="/">
+    <img src="{% static 'images/лого стр.png' %}" height="80" alt="">
+  </a>
+</nav>
+{% endblock header %}
 
 {% block content %}
-<section class="info">
-  <img src="https://codetheweb.blog/assets/img/icon2.png">
-  <h1>Learn HTML &mdash; <a href="https://codetheweb.blog/" target="_blank">Code The Web</a></h1>
-</section>
-<section class="cards-wrapper">
-  <div class="card-grid-space">
-    <a class="card"  style="background-color: #08286d;">
-      <div>
-        <h1>АЭС Сюйдапу</h1>
-        <p>Отгружен "Бак организованных протечек" на Блок №4 АЭС "Сюйдапу" (Китай)</p>
-        <div class="date">6 Апр 2022</div>
-        <div class="tags">
-          <div class="tag">Отгрузка</div>
-        </div>
+<div class="container">
+  <blockquote class="blockquote-7">
+    <div class="txt2">
+      <h2>Вы можете связаться с нами</h2>
       </div>
-    </a>
-  </div>
-  <div class="card-grid-space">
-    <a class="card" style="background-color: #08286d;">
-      <div>
-        <h1>АЭС Куданкулам</h1>
-        <p>Отгружена "Ловушка фильтрующих материалов на Бок №5 АЭС "Куданкулам" (Индия)</p>
-        <div class="date">9 Апр 2022</div>
-        <div class="tags">
-          <div class="tag">Отгрузка</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="card-grid-space">
-    <a class="card"  style="background-color: #08286d;">
-      <div>
-        <h1>Курская АЭС</h1>
-        <p>Отгружен "Воздухосборник" на "Курскую" АЭС (России)</p>
-        <div class="date">14 Апр 2022</div>
-        <div class="tags">
-          <div class="tag">Отгрузка</div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="card-grid-space">
-    <a class="card"  style="background-color: #08286d;">
-      <div>
-        <h1>АЭС Руппур</h1>
-        <p>Отгружен "Блок фильтрующих модулей" на Блок №1 АЭС "Руппур" (Бангладеш)</p>
-        <div class="date">14 Апр 2022</div>
-        <div class="tags">
-          <div class="tag">Отгрузка</div>
-        </div>
-      </div>
-    </a>
-  </div>
-</section>
+      <script src="https://yastatic.net/s3/frontend/forms/_/embed.js">
+      </script>
+      <iframe src="https://forms.yandex.ru/u/6277efd7ce6491d4fcfcff7d/?iframe=1" frameborder="0" name="ya-form-6277efd7ce6491d4fcfcff7d" width="100%" height="700">
+    </iframe>
+  </blockquote>
+</div>
 {% endblock content %}
+
+{% block footer %}
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                <h3>ООО "Полесье"</h3>
+                  <ul>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Система качества</a></li>
+                      <li><a href="#">Каталог оборудования</a></li>
+                      <li><a href="#">Услуги</a></li>
+                      <li><a href="#">Контакты</a></li>
+                  </ul>
+              </div>
+
+          <p class="copyright">ООО "Полесье" © 2021</p>
+      </div>
+  </footer>
+</div>
+{% endblock footer %}

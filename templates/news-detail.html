@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Новости
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/ct.css' %}">
+<link rel="stylesheet" href="{% static 'css/3.css' %}">
+<link rel="stylesheet" href="{% static 'css/news.css' %}">
+{% endblock link %}
+
+{% block body_style %}
+background-color: rgb(255, 255, 255);
+{% endblock body_style %}
+
+{% block content %}
+<div class="container">
+  <blockquote class="blockquote-7">
+    <div class="txt2">
+      <h2>{{object.title}}</h2>
+      </div>
+      <p>{{object.text}}</p>
+      {% if object.img %}
+      <img class="img-fluid" src="{{object.img.url}}">
+      {% endif %}
+  </blockquote>
+</div>
+{% endblock content %}
